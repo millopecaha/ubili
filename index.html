@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          center: true,
+          padding: {
+            DEFAULT: "10px",
+            sm: "15px",
+            lg: "30px",
+            xl: "50px",
+            "2xl": "100px",
+
+          },
+        },
+        fontFamily: {
+          raleway: ["raleway"],
+          ubuntu: ["ubun"],
+          san: ["sans"],
+        },
+        extend: {
+          backgroundImage: {
+            "pink": "url('./images/ngpink.svg')",
+
+          },
+          colors: {
+            'regal-blue': '#040F28',
+            'orange': '#D48A5C',
+            'blue': '#F6F2EE',
+            'bejev': '#F2EAE2',
+            'gray': '#646464',
+            'white-gray': '#C4C4C4',
+            'pink': '#FC3867',
+            'light-gray': '#D8D8D8',
+            'white': '#FFFFFF',
+            'dark-gray': '#999999',
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body>
+  <header class="w-full bg-regal-blue py-5 text-white">
+    <div class="container flex flex-row justify-between items-center lg:justify-center  gap-20  ">
+      <div>
+        <h3 class="font-bold text-2xl font-raleway text-center ">Freelancer</h3>
+      </div>
+      <ul class=" hidden lg:flex flex-row  lg:gap-3 md::gap-10 items-center justify-end  pl-96">
+        <li class="font-ubun font-medium text-base hover:text-gray ">Home</li>
+        <li class="font-ubun font-medium text-base hover:text-gray">About</li>
+        <li class="font-ubun font-medium text-base hover:text-gray">Services</li>
+        <li class="font-ubun font-medium text-base hover:text-gray">Reviews</li>
+        <li class="font-ubun font-medium text-base hover:text-gray">Article</li>
+      </ul>
+      <button
+        class="px-7 py-3 border hover:bg-white duration-300 hover:text-black border-red text-white  rounded-full hidden lg:flex">Register</button>
+      <div>
+        <button class="  flex lg:hidden"><i class="fa-solid fa-bars"></i></button>
+
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="w-full bg-regal-blue  text-white  ">
+      <div class="flex flex-row items-center lg:justify-between   lg:gap-20 container pt-10  ">
+
+        <div class=" flex flex-col font-ubun   lg:mb-56   gap-10  lg:w-[400px] ">
+          <h2 class=" font-bold lg:text-[56px]  text-2xl text-center lg:text-start leading-tight">Hy! I Am
+            Shamima Akhi</h2>
+          <div class="  text-center  lg:w-[450px] lg:text-start">
+            <p class="text-base font-normal">Service Line helps you to turn your complex multisite, multivendor imaging
+              environment into a uniform and
+              balanced operation.</p>
+          </div>
+          <div class=" flex  items-center">
+            <button
+              class="px-7 py-3 border  hover:bg-white bg-pink  duration-300 hover:text-black border-red text-white  rounded-full hidden lg:flex">Get
+              Started</button>
+
+          </div>
+        </div>
+        <div class="hidden lg:flex">
+          <img src="./images/men.png" alt="pasan" class="hidden lg:flex ">
+        </div>
+      </div>
+    </section>
+    <section class="flex  pt-20  py-10 ">
+      <div
+        class=" lg:flex  flex flex-col  gap-20 lg:flex-row   lg:gap-36   items-center justify-center container  text-center ">
+        <div class=" flex flex-col gap-5  lg:border-r-2   border-light-gray lg:pr-[100px]">
+          <span class="  font-bold text-6xl font-ubuntu">258+</span>
+
+          <span class=" font-san text-lg font-bold">Positive Feedback</span>
+          <span class="text-white-gray font-san  font-normal ">From our clients</span>
+        </div>
+        <div class=" flex flex-col  lg:border-r-2   border-light-gray lg:pr-[100px]">
+          <span class="  font-bold text-6xl font-ubuntu">590k</span>
+          <span class=" font-san text-lg font-bold mt-5"> Project Complete</span>
+          <span class="text-white-gray font-san  font-normal mt-3 ">My Achievement</span>
+        </div>
+        <div class=" flex flex-col">
+          <span class="  font-bold text-6xl font-ubuntu">28+</span>
+          <span class=" font-san text-lg font-bold mt-5">Years of Experience</span>
+          <span class="text-white-gray font-san  font-normal mt-3 ">High quailified</span>
+        </div>
+      </div>
+    </section>
+    <section class="w-full bg-regal-blue py-5 text-white pt-20 ">
+      <div class=" container flex flex-wrap lg:flex-row lg:flex items-center  justify-center  lg:justify-between  ">
+        <div class="lg:w-[35%] flex flex-col gap-4 ">
+          <h2 class="font-normal text-base font-ubun lg:text-start text-center">BEST SERVICES</h2>
+          <span class=" font-ubun  text-2xl font-bold lg:text-4xl  lg:leading-normal lg:text-start text-center">Benefits
+            You get when using our services</span>
+        </div>
+        <div class=" lg:w-[400px]  mt-10  text-center  md:w-[345px] sm:w-[200px] lg:mt-20  ">
+          <p class="font-ubun font-normal text-base"> While we can customize your needs plan to suit your needs, most
+            clients schedule regular interior services</p>
+        </div>
+      </div>
+      <div class=" flex gap-10 pt-10 pb-10  items-center justify-center lg:pl-[100px] lg:flex lg:flex-row flex-col ">
+        <div class=" flex items-center pt-10 ">
+          <div class=" lg:border-r-[1px] items-center flex gap-5 lg:pr-20">
+            <img src="./images/bestquality.svg" alt="" class="pb-[70px]">
+            <div class="lg:w-[243px] w-[200px]">
+              <span class="font-ubun text-xl font-bold ">Best Quality</span>
+              <p class="text-base font-normal  mt-3">It starts with our fun and easy project questionnaire where you’ll
+                provide details.</p>
+            </div>
+          </div>
+        </div>
+        <div class=" flex items-center pt-10 ">
+          <div class=" lg:border-r-[1px] items-center flex gap-5  lg:pr-20  lg:pl-10">
+            <img src="./images/education.svg" alt="" class="pb-[70px]">
+            <div class="lg:w-[243px]  w-[200px]">
+              <span class="font-ubun text-xl font-bold  lg:text-start text-center">Excellent Design</span>
+              <p class="text-base font-normal mt-3 ">After getting matched, your designer will message with you to
+                collaborate on ideas.</p>
+            </div>
+          </div>
+        </div>
+        <div class=" flex items-center pt-10 ">
+          <div class=" items-center flex gap-5   pl-[10px] lg:pr-10 ">
+            <img src="./images/pocket.svg" alt="" class="pb-[60px]">
+            <div class="lg:w-[243px] w-[200px]">
+              <span class="font-ubun text-xl font-bold lg:text-start text-center">guaranteed Shipping</span>
+              <p class="text-base font-normal mt-3">Designer incorporates feedback into the final room design and layout
+                with.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full bg-regal-blue  text-white ">
+      <div class="container pt-20 py-5 flex flex-col">
+        <div class=" flex flex-col gap-10 lg:gap-5 text-center ">
+          <h1 class="font-bold  text-4xl font-ubun">What we have for you</h1>
+          <span class="font-ubun text-2xl">Some of the services we provide to meet your needs</span>
+        </div>
+        <div class="flex  flex-wrap gap-10 items-center justify-center  pt-10">
+
+          <div
+            class=" flex items-start justify-center  lg:pr-20 pt-5 gap-5    bg-white  w-[284px] lg:w-[500px] pb-10  text-black rounded-xl   ">
+            <div
+              class=" items-center hidden lg:flex gap-5    pl-[10px] lg:pr-10 bg-pink w-[80px] rounded-full h-[80px] relative mb-24  ">
+              <img src="./images/computer.svg" alt=""
+                class="  absolute bottom-[30px] right-[17px] top-[20px] left-[20px]  ">
+            </div>
+            <div class="  lg:w-[300px] lg:items-start items-end justify-end w-56  text-center lg:text-start">
+              <span class="font-ubun  text-base font-semibold lg:text-xl lg:font-bold">Corporate Web Design</span>
+              <p class="text-base font-normal mt-3  ">A marketing tool that is a complete solution
+                for bringing your company within reach of
+                your target market; Wrapped up in great
+                UI/UX design and informative contents
+                about your products or services.</p>
+              </w-56>
+            </div>
+          </div>
+          <div
+            class=" flex items-start  justify-center pt-5 gap-3 lg:pr-20   bg-white w-[284px] lg:w-[500px] pb-20 lg:pb-10 text-black rounded-xl   ">
+            <div
+              class=" items-center hidden lg:flex gap-5    pl-[10px] lg:pr-10 bg-pink w-[80px] rounded-full h-[80px] relative mb-24  ">
+              <img src="./images/pen 1.svg" alt=""
+                class="  absolute bottom-[30px] right-[17px] top-[20px] left-[20px]  ">
+            </div>
+            <div class=" w-[200px] lg:w-[300px] flex flex-col  items-center lg:items-start">
+              <span class="font-ubun text-xl font-bold  text-center">Ilustration Design</span>
+              <div class="w-56 lg:w-[330px] lg:text-start text-center">
+                <p class="text-base font-normal mt-3 ">Illustrations can be used to give a complete
+                  picture of the content of a work. we are
+                  ready to help you create good and
+                  meaningful illustrations for you.</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class=" flex items-start justify-center pt-5 gap-5    pr-5 lg:pr-20  bg-white  w-[284px] lg:w-[500px] pb-10  text-black rounded-xl   ">
+            <div
+              class=" items-center gap-5    pl-[10px] lg:pr-10 bg-pink w-[80px] rounded-full h-[80px] relative mb-24 lg:flex hidden  ">
+              <img src="./images/korzina.svg" alt=""
+                class="  absolute bottom-[30px] right-[17px] top-[20px] left-[20px] lg:flex hidden  ">
+            </div>
+            <div class=" w-[200px] lg:w-[300px] lg:text-start text-center items-center lg:items-start">
+              <span class="font-ubun text-xl font-bold ">Development System</span>
+              <div class="lg:w-[330px] w-56">
+                <p class="text-base font-normal mt-3 ">Sell more products using a user-friendly
+                  checkout flow and simplify your sales  operation with our powerful CMS. Online
+                  payment, membership to invoice, and
+                  label printing are ready in the box..</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class=" flex items-start  pr-4 lg:pr-10   justify-center pt-5 gap-5    bg-white w-[284px] lg:w-[500px] pb-10  text-black rounded-xl   ">
+            <div
+              class=" items-center  hidden lg:flex gap-5    pl-[10px] lg:pr-10 bg-pink w-[80px] rounded-full h-[80px] relative mb-24  ">
+              <img src="./images/mechanic.svg" alt=""
+                class="  absolute bottom-[30px] right-[17px] top-[20px] left-[20px]  ">
+            </div>
+            <div class=" w-[200px] lg:w-[330px] lg:text-start items-center lg:items-start">
+              <span class="font-ubun  lg:text-xl font-bold text-[15px]">Web Maintenance Service</span>
+              <div class="lg:w-[330px] w-56 lg:text-start text-center">
+                <p class="text-base font-normal mt-3 ">Our mission is to make your web project last
+                  for years. We want you to have peace-of-
+                  mind while running your web project knowing
+                  that our support is behind it, so you can focus
+                  on what you.</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class=" flex items-start  pr-4 lg:pr-10   justify-center pt-5 gap-5    bg-white   w-[284px] lg:w-[500px] pb-10  text-black rounded-xl   ">
+            <div
+              class=" items-center lg:flex gap-5   hidden  pl-[10px] lg:pr-10 bg-pink w-[80px] rounded-full h-[80px] relative mb-24  ">
+              <img src="./images/seo.svg" alt="" class="  absolute bottom-[30px] right-[17px] top-[20px] left-[20px]  ">
+            </div>
+            <div class=" w-[200px] lg:w-[330px] lg:text-start text-center">
+              <span class="font-ubun text-xl font-bold ">SEO Service</span>
+              <div class="lg:w-[330px] w-56">
+                <p class="text-base font-normal mt-3 ">Make your company's website more
+                  competitive on Google's search result by
+                  using your best keywords set. We also
+                  analyze and audit your current site
+                  before optimizing it.</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class=" flex items-start pr-4 lg:pr-10   justify-center pt-5 gap-5   w-[284px]  bg-white lg:w-[500px] pb-10 text-black rounded-xl   ">
+            <div
+              class=" items-center lg:flex hidden gap-5    pl-[10px] lg:pr-10 bg-pink w-[80px] rounded-full h-[80px] relative mb-24  ">
+              <img src="./images/smartphone (1) 1.svg" alt=""
+                class="  absolute bottom-[30px] right-[17px] top-[20px] left-[20px]  ">
+            </div>
+            <div class=" w-[200px] lg:w-[330px] lg:text-start text-center ">
+              <span class="font-ubun text-xl font-bold  text-center">UI/UX Design</span>
+              <div class=" lg:w-[330px] w-56">
+                <p class="text-base font-normal mt-3 ">UI design on a product aims to beautify the
+                  appearance of the product. While the UX
+                  design is designed to provide a pleasant
+                  experience when using the product.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full bg-regal-blue py-5 text-white pt-20 lg:pl-20">
+      <div class="container">
+        <div class="flex   flex-col gap-5 items-center justify-center text-center">
+          <h3 class="font-ubun text-4xl font-normal text-white text-center">Some of my Creative work</h3>
+          <div class="  w-[300px] md:w-[417px]">
+            <p class="font-ubun text-sm font-normal text-dark-gray text-center">An all electric vehicle offering an
+              estimated 20 plus miles of range
+              per charge for an affordable price is how we define but passion
+              and persistence are the principles used to accomplish it</p>
+          </div>
+        </div>
+        <div class=" lg:flex  flex-row gap-6 pt-10 ">
+          <div class="  hidden lg:flex flex-col gap-6 items-center ">
+            <img src="./images/1flower.png" alt="flower" class="w-[588px]">
+            <img src="./images/2flower.png" alt="flower " class="w-[588px]">
+          </div>
+          <div class="flex flex-col gap-6 items-center">
+            <img src="./images/3flower.png" alt="flower" class="w-[588px]">
+            <img src="./images/4flower.png" alt="flower" class="w-[588px]">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full bg-regal-blue py-5 text-white pt-20">
+      <div class="container pb-24">
+        <div class=" flex flex-col text-center items-center justify-center gap-4">
+          <span class="font-ubunt text-base font-medium">Our Pricing</span>
+          <div class=" lg:w-[484px]">
+            <p class=" text-2xl lg:text-4xl font-ubun font-normal">available prices and cheap
+              packages </p>
+          </div>
+          <div class=" flex lg:flex-row flex-col  gap-10 items-center  pt-14 ">
+            <div class="w-[300px] h-[430px]  lg:w-[300px]  lg:h-[450px] bg-white text-black pl-7 rounded-xl font-ubun">
+              <div class="flex flex-col items-start justify-start pt-11 gap-6">
+                <span class="font-ubun text-xl font-bold">Basic</span>
+                <span class="font-medium text-5xl">$12 / <span class="font-normal text-base">month</span></span>
+              </div>
+              <div class="mt-10 pl-7">
+                <ul class=" flex flex-col items-start font-ubun text-sm font-normal  gap-3">
+                  <li>Got access only 1 day</li>
+                  <li>Get free drinks and snacks</li>
+                  <li>Free parking for 1 month</li>
+                </ul>
+              </div>
+              <div class="mt-[75px] pl-11">
+                <button
+                  class="px-7 py-3 border  hover:bg-white bg-pink  duration-300 hover:text-black border-red text-white  rounded-full flex">Get
+                  Started</button>
+              </div>
+            </div>
+            <div
+              class="  w-[300px] h-[430px]  lg:w-[300px]  lg:h-[450px] bg-white text-black pl-7 rounded-xl font-ubun">
+              <div class="flex flex-col items-start justify-start pt-11 gap-6">
+                <span class="font-ubun text-xl font-bold">Premium</span>
+                <span class="font-medium text-5xl">$24 / <span class="font-normal text-base">month</span></span>
+              </div>
+              <div class="mt-10 ">
+                <ul class=" flex flex-col items-start font-ubun text-sm font-normal  gap-3">
+                  <div class=" flex  gap-2">
+                    <img src="./images/right.svg" alt="">
+                    <li>Got access only 1 day</li>
+                  </div>
+                  <div class="flex gap-2">
+                    <img src="./images/right.svg" alt="">
+                    <li>Get free drinks and snacks</li>
+                  </div>
+                  <div class="flex gap-2">
+                    <img src="./images/right.svg" alt="">
+                    <li>Free parking for 1 month</li>
+                  </div>
+                  <div class="flex gap-2">
+                    <img src="./images/right.svg" alt="">
+                    <li>private workout in a special room</li>
+                  </div>
+                </ul>
+              </div>
+              <div class="mt-[45px] pl-10">
+                <button
+                  class="px-7 py-3 border  hover:bg-white bg-pink  duration-300 hover:text-black border-red text-white  rounded-full flex">Get
+                  Started</button>
+              </div>
+            </div>
+            <div class="w-[300px] h-[430px]  lg:w-[300px]  lg:h-[450px] bg-white text-black pl-7 rounded-xl font-ubun">
+              <div class="flex flex-col items-start justify-start pt-10 gap-6">
+                <span class="font-ubun text-xl font-bold">Super</span>
+                <span class="font-medium text-5xl">$32 / <span class="font-normal text-base">month</span></span>
+              </div>
+              <div class="mt-10 ">
+                <ul class=" flex flex-col items-start font-ubun text-sm font-normal  gap-3">
+                  <div class=" flex  gap-2">
+                    <img src="./images/right.svg" alt="">
+                    <li>Got access only 1 day</li>
+                  </div>
+                  <div class="flex gap-2">
+                    <img src="./images/right.svg" alt="">
+                    <li>Get free drinks and snacks</li>
+                  </div>
+                  <div class="flex gap-2">
+                    <img src="./images/right.svg" alt="">
+                    <li>Free parking for 1 month</li>
+                  </div>
+                  <div class="flex gap-2">
+                    <img src="./images/right.svg" alt="">
+                    <li>private workout in a special room</li>
+                  </div>
+                  <div class="flex  gap-2">
+                    <img src="./images/right.svg" alt="">
+                    <li>Access to the fitness community</li>
+                  </div>
+                </ul>
+              </div>
+              <div class="mt-5 pl-10">
+                <button
+                  class="px-7 py-3 border  hover:bg-white bg-pink  duration-300 hover:text-black border-red text-white  rounded-full flex">Get
+                  Started</button>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section class="w-full bg-white pt-10 pb-10">
+      <div class="container items-center justify-center flex flex-col gap-10">
+        <span class="text-white-gray text-base font-semibold font-ubun">Subscribe Now</span>
+        <p class="text-black lg:text-4xl font-ubun  font-bold">Subscribe to get update info from us</p>
+        <button
+          class="px-7 py-3 border  hover:bg-white bg-pink  duration-300 hover:text-black border-red text-white  rounded-full flex">Get
+          Started</button>
+      </div>
+    </section>
+  </main>
+  <footer class="w-full bg-black pt-10 pb-10">
+    <div class="container  text-white flex items-center lg:justify-between justify-center ">
+      <div class="lg:flex flex-col gap-7  hidden">
+        <h1 class="font-san font-extrabold text-2xl text-white  lg:text-start text-center ">Cartrix</h1>
+        <div class="text-light-gray  w-[300px] text-center lg:text-start lg:w-[360px]">
+          An all Design Tools offering an estimated 20 plus
+          Design of range per charge for an affordable price
+          is how we define but passion and persistence
+        </div>
+        <div class=" hidden lg:flex gap-5">
+          <img src="./images/Facebook.svg" alt="">
+          <img src="./images/Instagram.svg" alt="">
+          <img src="./images/Twitter.svg" alt="">
+          <img src="./images/Youtube.svg" alt="">
+        </div>
+      </div>
+      <div class=" flex lg:flex-row  flex-col items-center gap-20 pl-10 ">
+        <div class="flex flex-col  md:flex-row gap-28">
+          <div class="">
+            <ul class=" flex flex-col gap-4 md:items-start">
+              <li>Our Design</li>
+              <li>Adobe illustration</li>
+              <li>Commercial Design</li>
+              <li>Web Development</li>
+            </ul>
+          </div>
+          <div class="">
+            <ul class="flex flex-col gap-4">
+              <li>Offers Finance</li>
+              <li>Current Deals</li>
+              <li>Mistery Discount</li>
+              <li>College Discount</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex  flex-col md:flex-row gap-28">
+
+          <div class="flex items-center">
+            <ul class="flex flex-col gap-4">
+              <li>Design Tools</li>
+              <li>Dealer Location</li>
+              <li>Build Car Price</li>
+              <li>Search Inventory</li>
+            </ul>
+          </div>
+          <div class="flex items-center">
+            <ul class="flex flex-col gap-4">
+              <li>Help Center</li>
+              <li>Payment Services</li>
+              <li>FAQ Community</li>
+              <li>Terms Condition</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+</body>
+
+</html>
